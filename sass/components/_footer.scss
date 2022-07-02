@@ -1,0 +1,94 @@
+// --- Footer block ---
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $dark-bg-color;
+}
+
+.footer__container {
+  display: flex;
+}
+
+.footer__icon-wrapper {
+  margin-left: 70px;
+  padding-top: 12px;
+}
+
+.footer__paragraph {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: $white-color;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+}
+
+.footer__form {
+  margin-left: 90px;
+  padding-top: 12px;
+}
+
+.footer__input {
+  box-sizing: border-box;
+  width: 358px;
+  height: 50px;
+  padding: 0 16px;
+  color: $white-color;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  background-color: transparent;
+  transition: border-color $transion-values;
+
+  &::placeholder {
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $accent-color;
+  }
+}
+
+.footer__button {
+  margin-left: 12px;
+}
+
+// --- Address block ---
+.address__list {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__link {
+  display: block;
+  transition: color $transion-values;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  &--white {
+    color: $white-color;
+  }
+}

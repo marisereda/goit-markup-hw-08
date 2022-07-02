@@ -1,0 +1,20 @@
+.portfolio__heading {
+  display: none;
+}
+
+.portfolio__filter {
+  margin-bottom: 50px;
+}
+
+.portfolio__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -$portfolio-item-gap;
+  margin-left: -$portfolio-item-gap;
+}
+
+.portfolio__card {
+  flex-basis: calc(100% / 3 - #{$portfolio-item-gap});
+  margin-top: $portfolio-item-gap;
+  margin-left: $portfolio-item-gap;
+}

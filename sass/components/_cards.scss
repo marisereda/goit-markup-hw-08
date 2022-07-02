@@ -1,0 +1,70 @@
+.card {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.card__link {
+  transition: box-shadow $transion-values;
+
+  &:hover,
+  &:focus {
+    // display: block;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.card__overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.card__overlay-paragraph {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  padding: 63px 24px;
+
+  font-size: 18px;
+  line-height: 1.56;
+  text-align: left;
+
+  color: $white-color;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform $transion-values, opacity $transion-values;
+
+  .card__link:hover &,
+  .card__link:focus & {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.card__descriptions {
+  padding: 20px 24px;
+  /* border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee; */
+}
+
+.card__heading {
+  margin-bottom: 4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: $primary-color;
+}
+
+.card__paragraph {
+  line-height: 1.88;
+
+  color: $secondary-color;
+}
