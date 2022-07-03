@@ -5,38 +5,131 @@
 .header__container {
   display: flex;
   align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @media screen and (min-width: $tablet-width) {
+    & * {
+      outline: 1px solid tomato;
+    }
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+  }
 }
 
 .header__contact-list {
   display: flex;
-  margin-left: auto;
-
+  flex-direction: column-reverse;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
+  margin-top: 64px;
+  margin-bottom: 64px;
+
+  @media screen and (min-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .header__contact-item:not(:first-child) {
-  margin-left: 50px;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-left: 50px;
+  }
 }
 
 .header__contact-link {
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
   color: $secondary-color;
+
   transition: color $transion-values;
 
   &:hover,
   &:focus {
     color: $accent-color;
   }
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+
+  &[href^='tel'] {
+    @media screen and (max-width: ($tablet-width - 1)) {
+      font-size: 34px;
+      color: $accent-color;
+    }
+  }
+}
+
+.header__mobile-button {
+  display: block;
+  margin-left: auto;
+  position: relative;
+
+  @media screen and (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.header__mobile-icon {
+  .header__mobile-button:hover,
+  .header__mobile-button:focus & {
+    fill: $accent-color;
+  }
+  // fill: $primary-color;
 }
 
 .header__icon {
-  margin-right: 10px;
-  fill: currentColor;
+  display: none;
+  @media screen and (min-width: $tablet-width) {
+    display: block;
+    margin-right: 10px;
+    fill: currentColor;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+  }
+}
+
+.header__icon-close {
+  display: none;
+
+  .header__mobile-button.is-open & {
+    display: block;
+  }
+}
+
+.header__icon-menu {
+  .header__mobile-button.is-open & {
+    display: none;
+  }
 }

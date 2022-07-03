@@ -1,0 +1,25 @@
+.mobile-menu {
+  display: flex;
+  width: 100%;
+
+  @media screen and (max-width: ($tablet-width - 1px)) {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    flex-direction: column;
+
+    transform: translateY(-100%);
+    transition: transform $transion-values;
+
+    padding: 48px 40px;
+    min-width: 100%;
+    min-height: 100%;
+
+    background-color: $white-color;
+
+    &.is-open {
+      transform: translateY(0);
+    }
+  }
+}

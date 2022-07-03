@@ -11,10 +11,6 @@ $icon-light-color: #afb1b8;
 $transion-values: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 $primary-font: 'Roboto', sans-serif;
 $secondary-font: 'Raleway', sans-serif;
-
-.div + .div {
-}
-.div .div {
-}
-.div.div {
-}
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1200px;
