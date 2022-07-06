@@ -2,14 +2,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+.customer__icons {
+  row-gap: $item-gap;
+  column-gap: $item-gap;
+}
+
+.icons__item--rectangle {
+  height: 92px;
+  flex-basis: calc((100% - #{$item-gap}) / 2);
+
+  @media screen and (min-width: $tablet-width) {
+    flex-basis: calc((100% - #{$item-gap} * 2) / 3);
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    flex-basis: calc((100% - #{$item-gap} * 5) / 6);
+  }
 }
 
 .icons__item--round:not(:first-child) {
   margin-left: 10px;
-}
-
-.icons__item--rectangle:not(:first-child) {
-  margin-left: 30px;
 }
 
 .icons__link {
@@ -28,8 +43,8 @@
   }
 
   &--rectangle {
-    width: 170px;
-    height: 92px;
+    width: 100%;
+    height: 100%;
     border-radius: 4px;
     border: 1px solid $icon-light-color;
   }

@@ -9,14 +9,8 @@
   padding-bottom: 10px;
 
   @media screen and (min-width: $tablet-width) {
-    & * {
-      outline: 1px solid tomato;
-    }
     padding-top: 0;
     padding-bottom: 0;
-  }
-
-  @media screen and (min-width: $desktop-width) {
   }
 }
 
@@ -53,7 +47,7 @@
 
   @media screen and (min-width: $desktop-width) {
     margin-top: 0;
-    margin-left: 50px;
+    margin-left: 30px;
   }
 }
 
@@ -91,9 +85,10 @@
 }
 
 .header__mobile-button {
+  position: relative;
+  z-index: 1;
   display: block;
   margin-left: auto;
-  position: relative;
 
   @media screen and (min-width: $tablet-width) {
     display: none;
@@ -101,15 +96,15 @@
 }
 
 .header__mobile-icon {
-  .header__mobile-button:hover,
+  .header__mobile-button:hover &,
   .header__mobile-button:focus & {
     fill: $accent-color;
   }
-  // fill: $primary-color;
 }
 
 .header__icon {
   display: none;
+
   @media screen and (min-width: $tablet-width) {
     display: block;
     margin-right: 10px;

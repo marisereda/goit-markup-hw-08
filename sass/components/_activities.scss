@@ -1,3 +1,9 @@
+.activities {
+  @media screen and (max-width: ($desktop-width - 1px)) {
+    display: none;
+  }
+}
+
 .activities__list {
   display: flex;
   justify-content: space-between;

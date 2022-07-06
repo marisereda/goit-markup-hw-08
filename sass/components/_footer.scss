@@ -8,22 +8,38 @@
 
 .footer__container {
   display: flex;
+
+  @media screen and (max-width: ($desktop-width - 1px)) {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 60px;
+    column-gap: 165px;
+  }
 }
 
 .footer__icon-wrapper {
-  margin-left: 70px;
   padding-top: 12px;
+
+  @media screen and (min-width: $desktop-width) {
+    margin-left: 70px;
+  }
 }
 
 .footer__paragraph {
   margin-bottom: 20px;
-
+  max-width: 100%;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
 
   color: $white-color;
+
+  @media screen and (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .footer__logo {
@@ -31,13 +47,25 @@
 }
 
 .footer__form {
-  margin-left: 90px;
   padding-top: 12px;
+
+  @media screen and (max-width: ($desktop-width - 1px)) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-left: 90px;
+  }
 }
 
 .footer__input {
   box-sizing: border-box;
-  width: 358px;
+  margin-bottom: 20px;
+  max-width: 450px;
+  min-width: 320px;
   height: 50px;
   padding: 0 16px;
   color: $white-color;
@@ -60,13 +88,34 @@
     outline: none;
     border-color: $accent-color;
   }
+
+  @media screen and (min-width: $tablet-width) {
+    min-width: 450px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    min-width: 358px;
+  }
 }
 
 .footer__button {
-  margin-left: 12px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $desktop-width) {
+    margin-left: 12px;
+  }
 }
 
 // --- Address block ---
+.address {
+  text-align: center;
+
+  @media screen and (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
 .address__list {
   font-style: normal;
   font-size: 14px;

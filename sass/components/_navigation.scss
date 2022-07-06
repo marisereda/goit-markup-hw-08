@@ -1,10 +1,5 @@
 .nav {
-  // display: flex;
-  // align-items: center;
-  margin-bottom: 0;
-
-  @media screen and (min-width: $tablet-width) {
-  }
+  margin-bottom: auto;
 }
 
 .nav__list {
@@ -75,6 +70,7 @@
       border-radius: 2px;
     }
   }
+
   @media screen and (min-width: $desktop-width) {
     padding-top: 32px;
     padding-bottom: 32px;

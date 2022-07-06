@@ -5,6 +5,10 @@ body {
   color: $primary-color;
 
   background-color: $white-color;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 a {
@@ -48,7 +52,6 @@ button {
 }
 
 .container {
-  outline: 1px solid tomato;
   max-width: $mobile-width;
   margin-left: auto;
   margin-right: auto;
@@ -75,7 +78,7 @@ button {
 }
 
 .section__heading {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   font-weight: 700;
   font-size: 28px;
@@ -85,5 +88,6 @@ button {
 
   @media screen and (min-width: $desktop-width) {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
