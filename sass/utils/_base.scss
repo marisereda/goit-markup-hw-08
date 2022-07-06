@@ -58,11 +58,11 @@ button {
   padding-left: 15px;
   padding-right: 15px;
 
-  @media screen and (min-width: $tablet-width) {
+  @include tablet {
     max-width: $tablet-width;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @include desktop {
     max-width: $desktop-width;
   }
 }
@@ -71,7 +71,7 @@ button {
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (min-width: $desktop-width) {
+  @include desktop {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -86,7 +86,7 @@ button {
   text-align: center;
   color: $primary-color;
 
-  @media screen and (min-width: $desktop-width) {
+  @include desktop {
     font-size: 36px;
     margin-bottom: 50px;
   }

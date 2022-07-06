@@ -7,14 +7,36 @@
 
   background-color: $dark-bg-color;
   background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/hero.jpg');
+    url('../images/hero/hero-mobile.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media screen and (min-width: $desktop-width) {
+  @include ratio2 {
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero/hero-mobile@2x.jpg');
+  }
+
+  @include tablet {
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero/hero-tablet.jpg');
+    @include ratio2 {
+      background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/hero/hero-tablet@2x.jpg');
+    }
+  }
+
+  @include desktop {
     padding-top: 200px;
     padding-bottom: 200px;
+
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero/hero-desktop.jpg');
+
+    @include ratio2 {
+      background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/hero/hero-desktop@2x.jpg');
+    }
   }
 }
 
@@ -31,7 +53,7 @@
   text-transform: uppercase;
   text-align: center;
 
-  @media screen and (min-width: $desktop-width) {
+  @include desktop {
     max-width: 696px;
     font-size: 44px;
     line-height: 1.36;

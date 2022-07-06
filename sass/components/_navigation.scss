@@ -8,7 +8,7 @@
   line-height: 1.17;
   letter-spacing: 0.02em;
 
-  @media screen and (min-width: $tablet-width) {
+  @include tablet {
     display: flex;
 
     font-size: 14px;
@@ -17,7 +17,7 @@
     margin-left: 88px;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @include desktop {
     display: flex;
 
     font-size: 14px;
@@ -30,7 +30,7 @@
 .nav__item:not(:last-child) {
   margin-bottom: 35px;
 
-  @media screen and (min-width: $tablet-width) {
+  @include tablet {
     margin-bottom: 0;
     margin-right: 50px;
   }
@@ -52,7 +52,7 @@
     color: $accent-color;
   }
 
-  @media screen and (min-width: $tablet-width) {
+  @include tablet {
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -71,7 +71,7 @@
     }
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @include desktop {
     padding-top: 32px;
     padding-bottom: 32px;
   }

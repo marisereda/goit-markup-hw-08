@@ -2,7 +2,7 @@
   display: flex;
   width: 100%;
 
-  @media screen and (max-width: ($tablet-width - 1px)) {
+  @include mobile-only {
     position: absolute;
     z-index: 1;
     top: 0;

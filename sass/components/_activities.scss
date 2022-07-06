@@ -1,5 +1,5 @@
 .activities {
-  @media screen and (max-width: ($desktop-width - 1px)) {
+  @include mobile-tablet-only {
     display: none;
   }
 }

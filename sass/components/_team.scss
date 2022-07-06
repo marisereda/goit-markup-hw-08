@@ -18,11 +18,11 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  @media screen and (min-width: $tablet-width) {
+  @include tablet {
     flex-basis: calc((100% - #{$item-gap}) / 2);
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @include desktop {
     flex-basis: calc((100% - #{$item-gap} * 3) / 4);
   }
 }

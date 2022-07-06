@@ -8,7 +8,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
 
-  @media screen and (min-width: $tablet-width) {
+  @include tablet {
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -24,7 +24,7 @@
   margin-top: 64px;
   margin-bottom: 64px;
 
-  @media screen and (min-width: $tablet-width) {
+  @include tablet {
     flex-direction: column;
     justify-content: center;
     margin-left: auto;
@@ -32,7 +32,7 @@
     margin-bottom: 0;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @include desktop {
     flex-direction: row;
   }
 }
@@ -40,12 +40,12 @@
 .header__contact-item:not(:first-child) {
   margin-bottom: 32px;
 
-  @media screen and (min-width: $tablet-width) {
+  @include tablet {
     margin-bottom: 0;
     margin-top: 10px;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @include desktop {
     margin-top: 0;
     margin-left: 30px;
   }
@@ -61,14 +61,14 @@
     color: $accent-color;
   }
 
-  @media screen and (min-width: $tablet-width) {
+  @include tablet {
     display: flex;
     align-items: center;
     font-size: 12px;
     line-height: 1.17;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @include desktop {
     margin-bottom: 0;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -77,7 +77,7 @@
   }
 
   &[href^='tel'] {
-    @media screen and (max-width: ($tablet-width - 1)) {
+    @include mobile-only {
       font-size: 34px;
       color: $accent-color;
     }
@@ -90,7 +90,7 @@
   display: block;
   margin-left: auto;
 
-  @media screen and (min-width: $tablet-width) {
+  @include tablet {
     display: none;
   }
 }
@@ -105,13 +105,10 @@
 .header__icon {
   display: none;
 
-  @media screen and (min-width: $tablet-width) {
+  @include tablet {
     display: block;
     margin-right: 10px;
     fill: currentColor;
-  }
-
-  @media screen and (min-width: $desktop-width) {
   }
 }
 

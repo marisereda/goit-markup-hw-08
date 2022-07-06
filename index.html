@@ -148,7 +148,8 @@
               <a class="activities__link" href="#!">
                 <p class="activities__text">Десктопные приложения</p>
                 <img
-                  src="./images/desktop.jpg"
+                  srcset="./images/works/work1.jpg 1x, ./images/works/work1@2x.jpg 2x"
+                  src="./images/works/work1.jpg"
                   alt="Десктопные приложения"
                   width="370"
                   height="294"
@@ -158,13 +159,23 @@
             <li class="activities__item">
               <a class="activities__link" href="#!">
                 <p class="activities__text">Мобильные приложения</p>
-                <img src="./images/mobile.jpg" alt="Мобильные приложения" width="370" height="294"
+                <img
+                  srcset="./images/works/work2.jpg 1x, ./images/works/work2@2x.jpg 2x"
+                  src="./images/works/work2.jpg"
+                  alt="Мобильные приложения"
+                  width="370"
+                  height="294"
               /></a>
             </li>
             <li class="activities__item">
               <a class="activities__link" href="#!">
                 <p class="activities__text">Дизайнерские решения</p>
-                <img src="./images/design.jpg" alt="Дизайнерские решения" width="370" height="294"
+                <img
+                  srcset="./images/works/work3.jpg 1x, ./images/works/work3@2x.jpg 2x"
+                  src="./images/works/work3.jpg"
+                  alt="Дизайнерские решения"
+                  width="370"
+                  height="294"
               /></a>
             </li>
           </ul>
@@ -180,7 +191,16 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/product_designer.jpg"
+                srcset="
+                  ./images/employees/employee1-270.jpg 270w,
+                  ./images/employees/employee1-354.jpg 354w,
+                  ./images/employees/employee1-450.jpg 450w,
+                  ./images/employees/employee1-540.jpg 540w,
+                  ./images/employees/employee1-708.jpg 708w,
+                  ./images/employees/employee1-900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                src="./images/employees/employee1-450.jpg"
                 alt="Игорь Демьяненко Product Designer"
                 width="270"
                 height="260"
@@ -223,7 +243,16 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/frontend_developer.jpg"
+                srcset="
+                  ./images/employees/employee2-270.jpg 270w,
+                  ./images/employees/employee2-354.jpg 354w,
+                  ./images/employees/employee2-450.jpg 450w,
+                  ./images/employees/employee2-540.jpg 540w,
+                  ./images/employees/employee2-708.jpg 708w,
+                  ./images/employees/employee2-900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                src="./images/employees/employee2-450.jpg"
                 alt="Ольга Репина Frontend Developer"
                 width="270"
                 height="260"
@@ -266,7 +295,16 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/marketing.jpg"
+                srcset="
+                  ./images/employees/employee3-270.jpg 270w,
+                  ./images/employees/employee3-354.jpg 354w,
+                  ./images/employees/employee3-450.jpg 450w,
+                  ./images/employees/employee3-540.jpg 540w,
+                  ./images/employees/employee3-708.jpg 708w,
+                  ./images/employees/employee3-900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                src="./images/employees/employee3-450.jpg"
                 alt="Николай Тарасов Marketing"
                 width="270"
                 height="260"
@@ -309,7 +347,16 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/ui_designer.jpg"
+                srcset="
+                  ./images/employees/employee4-270.jpg 270w,
+                  ./images/employees/employee4-354.jpg 354w,
+                  ./images/employees/employee4-450.jpg 450w,
+                  ./images/employees/employee4-540.jpg 540w,
+                  ./images/employees/employee4-708.jpg 708w,
+                  ./images/employees/employee4-900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                src="./images/employees/employee4-450.jpg"
                 alt="Михаил Ермаков UI Designer"
                 width="270"
                 height="260"
@@ -549,6 +596,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

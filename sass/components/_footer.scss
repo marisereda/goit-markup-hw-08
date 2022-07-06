@@ -9,7 +9,7 @@
 .footer__container {
   display: flex;
 
-  @media screen and (max-width: ($desktop-width - 1px)) {
+  @include mobile-tablet-only {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -21,7 +21,7 @@
 .footer__icon-wrapper {
   padding-top: 12px;
 
-  @media screen and (min-width: $desktop-width) {
+  @include desktop {
     margin-left: 70px;
   }
 }
@@ -37,7 +37,7 @@
 
   color: $white-color;
 
-  @media screen and (min-width: $desktop-width) {
+  @include desktop {
     text-align: left;
   }
 }
@@ -49,14 +49,14 @@
 .footer__form {
   padding-top: 12px;
 
-  @media screen and (max-width: ($desktop-width - 1px)) {
+  @include mobile-tablet-only {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @include desktop {
     margin-left: 90px;
   }
 }
@@ -89,11 +89,11 @@
     border-color: $accent-color;
   }
 
-  @media screen and (min-width: $tablet-width) {
+  @include tablet {
     min-width: 450px;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @include desktop {
     min-width: 358px;
   }
 }
@@ -102,7 +102,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (min-width: $desktop-width) {
+  @include desktop {
     margin-left: 12px;
   }
 }
@@ -111,7 +111,7 @@
 .address {
   text-align: center;
 
-  @media screen and (min-width: $desktop-width) {
+  @include desktop {
     text-align: left;
   }
 }

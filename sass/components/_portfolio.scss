@@ -5,10 +5,10 @@
 .portfolio__filter {
   margin-bottom: 40px;
 
-  @media screen and (min-width: $tablet-width) {
+  @include tablet {
     margin-bottom: 30px;
 
-    @media screen and (min-width: $desktop-width) {
+    @include desktop {
       margin-bottom: 50px;
     }
   }
@@ -24,11 +24,11 @@
 .portfolio__card {
   flex-basis: 100%;
 
-  @media screen and (min-width: $tablet-width) {
+  @include tablet {
     flex-basis: calc((100% - #{$item-gap}) / 2);
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @include desktop {
     flex-basis: calc((100% - #{$item-gap} * 2) / 3);
   }
 }
