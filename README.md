@@ -1,6 +1,7 @@
 # WEB studio
 
-The project Web Studio demonstrates the use of responsive design for mobile, tablet, and desktop, including the version for retina displays.
+The **project Web Studio** demonstrates the use of responsive design for mobile, tablet, and
+desktop, including the version for retina displays.
 
 ## There were used:
 
@@ -8,4 +9,4 @@ The project Web Studio demonstrates the use of responsive design for mobile, tab
 - SASS preprocessor
 - mobile-first design
 
-The live Web studio page is here:  https://marisereda.github.io/goit-markup-hw-08/
+The live Web studio page is [here](https://marisereda.github.io/goit-markup-hw-08/).
